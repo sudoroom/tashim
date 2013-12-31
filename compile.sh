@@ -18,7 +18,7 @@ slic3r \
 	 --nozzle-diameter 0.35 \
 	 --filament-diameter 1.75 \
 	 --temperature 220 \
-	 --print-center 180,50 \
+	 --print-center 185,100 \
 	 --skirts 2 \
 	 -o shim.gcode shim.stl
 
