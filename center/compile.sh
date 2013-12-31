@@ -8,7 +8,7 @@ self=$(readlink -e "$0") || exit 1
 self=$(dirname "${self}") || exit 1
 cd "$self"
 
-openscad -o shim.stl shim.scad
+openscad -o center.stl center.scad
 
 slic3r \
 	 --layer-height 0.25 \
@@ -20,7 +20,7 @@ slic3r \
 	 --temperature 220 \
 	 --print-center 185,100 \
 	 --skirts 2 \
-	 -o shim.gcode shim.stl
+	 -o center.gcode center.stl
 
-sed -i 's/M104 S200/M104 S220/' shim.gcode
-sed -i 's/M109 S200/M109 S220/' shim.gcode
+sed -i 's/M104 S200/M104 S220/' center.gcode
+sed -i 's/M109 S200/M109 S220/' center.gcode
