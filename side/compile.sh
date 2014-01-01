@@ -19,7 +19,7 @@ slic3r \
 	 --filament-diameter 1.75 \
 	 --temperature 220 \
 	 --print-center 185,100 \
-	 --skirts 2 \
+	 --skirts 3 \
 	 -o side.gcode side.stl
 
 sed -i 's/M104 S200/M104 S220/' side.gcode
