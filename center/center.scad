@@ -1,6 +1,6 @@
-translate([-20,-20,0]) cube([40,40,5]);
+translate([-40,-40,0]) cube([80,80,19]);
 
-linear_extrude(height=10) polygon(points=[[ 20, 20],[ 20, 17],[ 17, 20]]);
-linear_extrude(height=10) polygon(points=[[-20, 20],[-20, 17],[-17, 20]]);
-linear_extrude(height=10) polygon(points=[[ 20,-20],[ 20,-17],[ 17,-20]]);
-linear_extrude(height=10) polygon(points=[[-20,-20],[-20,-17],[-17,-20]]);
+linear_extrude(height=26) polygon(points=[[ 40, 40],[ 40, 17],[ 17, 40]]);
+linear_extrude(height=26) polygon(points=[[-40, 40],[-40, 17],[-17, 40]]);
+linear_extrude(height=26) polygon(points=[[ 40,-40],[ 40,-17],[ 17,-40]]);
+linear_extrude(height=26) polygon(points=[[-40,-40],[-40,-17],[-17,-40]]);
