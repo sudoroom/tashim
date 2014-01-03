@@ -18,8 +18,9 @@ slic3r \
 	 --nozzle-diameter 0.35 \
 	 --filament-diameter 1.75 \
 	 --temperature 220 \
-	 --print-center 185,100 \
+	 --print-center 185,80 \
 	 --skirts 3 \
+	 --fill-density 0.2 \
 	 -o side.gcode side.stl
 
 sed -i 's/M104 S200/M104 S220/' side.gcode
