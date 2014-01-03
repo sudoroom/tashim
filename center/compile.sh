@@ -19,7 +19,7 @@ slic3r \
 	 --filament-diameter 1.75 \
 	 --temperature 220 \
 	 --print-center 195,140 \
-	 --skirts 2 \
+	 --skirts 3 \
 	 --fill-density 0.5 \
 	 -o center.gcode center.stl
 
