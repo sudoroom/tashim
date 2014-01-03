@@ -18,9 +18,10 @@ slic3r \
 	 --nozzle-diameter 0.35 \
 	 --filament-diameter 1.75 \
 	 --temperature 220 \
-	 --print-center 195,140 \
+	 --print-center 190,60 \
 	 --skirts 3 \
 	 --fill-density 0.5 \
+	 --duplicate 3 \
 	 -o center.gcode center.stl
 
 sed -i 's/M104 S200/M104 S220/' center.gcode
