@@ -17,7 +17,7 @@ slic3r \
 	 --nozzle-diameter 0.35 \
 	 --filament-diameter 1.75 \
 	 --temperature 220 \
-	 --print-center 180,70 \
+	 --print-center 190,50 \
 	 --skirts 3 \
 	 --fill-density 0.05 \
 	 -o rleft.gcode rleft.stl
