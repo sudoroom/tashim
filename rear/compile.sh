@@ -20,7 +20,7 @@ slic3r \
 	 --temperature 220 \
 	 --print-center 180,70 \
 	 --skirts 3 \
-	 --fill-density 0.5 \
+	 --fill-density 0.25 \
 	 -o rear.gcode rear.stl
 
 sed -i 's/M104 S200/M104 S220/' rear.gcode
