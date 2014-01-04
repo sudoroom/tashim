@@ -8,7 +8,7 @@ self=$(readlink -e "$0") || exit 1
 self=$(dirname "${self}") || exit 1
 cd "$self"
 
-openscad -o rear.stl rear.scad
+openscad -o rright.stl rright.scad
 
 slic3r \
 	 --layer-height 0.25 \
@@ -21,7 +21,7 @@ slic3r \
 	 --print-center 180,70 \
 	 --skirts 3 \
 	 --fill-density 0.25 \
-	 -o rear.gcode rear.stl
+	 -o rright.gcode rright.stl
 
-sed -i 's/M104 S200/M104 S220/' rear.gcode
-sed -i 's/M109 S200/M109 S220/' rear.gcode
+sed -i 's/M104 S200/M104 S220/' rright.gcode
+sed -i 's/M109 S200/M109 S220/' rright.gcode
