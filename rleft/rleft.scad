@@ -1,7 +1,7 @@
-difference() {
-	cube([61,20,60]);
-	translate([-1,-1,35]) cube([16,22,26]);
-	translate([0,7.5,40]) cube([61,6,21]);
-	translate([20,7.5,13.33333]) cube([42,6,47.66667]);
-	translate([31.25,12.45,-1]) cube([30.75,8.5,62]);
+union() {
+	translate([0,0,0])    cube([19,20,35]);
+	translate([15,0,0])   cube([5,20,40]);
+	translate([15,0,0])   cube([46,7,60]);
+	translate([15,13,0])  cube([16.25,7,60]);
+	translate([0,0,0]) cube([61,13.01,13.333]);
 }
