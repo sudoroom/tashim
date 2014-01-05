@@ -12,15 +12,14 @@ openscad -o side.stl side.scad
 
 slic3r \
 	 --layer-height 0.25 \
-	 --perimeters 3 \
-	 --bottom-solid-layers 3 \
-	 --top-solid-layers 3 \
+	 --perimeters 1 \
+	 --solid-layers 1 \
 	 --nozzle-diameter 0.35 \
 	 --filament-diameter 1.75 \
 	 --temperature 220 \
-	 --print-center 185,80 \
+	 --print-center 190,50 \
 	 --skirts 3 \
-	 --fill-density 0.2 \
+	 --fill-density 0.1 \
 	 -o side.gcode side.stl
 
 sed -i 's/M104 S200/M104 S220/' side.gcode
