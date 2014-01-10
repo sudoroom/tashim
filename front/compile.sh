@@ -8,7 +8,9 @@ self=$(readlink -e "$0") || exit 1
 self=$(dirname "${self}") || exit 1
 cd "$self"
 
-openscad -o front.stl front.scad
+name=front
+
+openscad -o ${name}.stl ${name}.scad
 
 slic3r \
 	 --layer-height 0.25 \
@@ -20,7 +22,7 @@ slic3r \
 	 --print-center 160,80 \
 	 --skirts 2 \
 	 --fill-density 0.2 \
-	 -o front.gcode front.stl
+	 -o ${name}.gcode ${name}.stl
 
-sed -i 's/M104 S200/M104 S220/' front.gcode
-sed -i 's/M109 S200/M109 S220/' front.gcode
+sed -i 's/M104 S200/M104 S220/' ${name}.gcode
+sed -i 's/M109 S200/M109 S220/' ${name}.gcode
